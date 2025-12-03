@@ -52,8 +52,9 @@ I tested and compared 5 different approaches:
 1. Clone the repository.
 2. Download the dataset from Kaggle and place it in the `data/` folder.
 3. Install dependencies:
+
    ```bash
    pip install pandas numpy scikit-learn lightgbm imbalanced-learn matplotlib seaborn
    ```
-4. Run the Jupyter Notebook
+5. Run the Jupyter Notebook
 
