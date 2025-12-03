@@ -26,7 +26,7 @@ I tested and compared 5 different approaches:
 4.  **LightGBM** (Supervised - Tuned with `is_unbalance=True`)
 5.  **Random Forest + SMOTE** (Supervised + Synthetic Data Generation)
 
-## Key Results ( The Benchmark)
+## Key Results (The Benchmark)
 
 | Model | Type | Recall (Catch Rate) | Precision (Reliability) | Verdict |
 | :--- | :--- | :---: | :---: | :--- |
@@ -39,7 +39,7 @@ I tested and compared 5 different approaches:
 ### Visual Comparison
 <img width="993" height="392" alt="image" src="https://github.com/user-attachments/assets/fcf0624b-e4f7-4ae9-8d3e-550ec7b23785" />
 
-## Conclusion & Business Insight
+## Conclusion
 * **Unsupervised methods** (Isolation Forest) failed to capture the complexity of fraud patterns in this dataset.
 * **LightGBM** achieved the highest recall (86%) but suffered from the "Precision-Recall Trade-off", generating too many false alarms (Low Precision).
 * **The Winner:** The combination of **SMOTE (Synthetic Minority Over-sampling Technique)** and **Random Forest** provided the best balance. It captured **85% of fraud cases** while maintaining **high precision**, making it the most practical model for a real-world banking system.
